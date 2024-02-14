@@ -30,4 +30,7 @@ Start-up - python manage.py runserver
 
 ## Tests
 
+No test running yet
 
+## Notes
+lab requirements are not complete yet. I still need for snacks and users to add. Also need to update css
