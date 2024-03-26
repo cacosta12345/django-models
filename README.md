@@ -18,13 +18,9 @@ Initialize virtual environment - python3 -m venv .venv
 
 Activate virtual environment for windows - source .venv/Scripts/activate
 
-Install Django - pip install django
+Install requirements:
 
-Install Django-compressor - pip install django-compressor
-
-Install Tailwindcss - npm install -D tailwindcss
-
-Initiate tailwind project - npx tailwindcss init
+pip install -r requirements.txt
 
 Start-up - python manage.py runserver
 
@@ -32,5 +28,4 @@ Start-up - python manage.py runserver
 
 No test running yet
 
-## Notes
-lab requirements are not complete yet. I still need for snacks and users to add. Also need to update css
+
