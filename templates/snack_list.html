@@ -1,20 +1,18 @@
 {% extends 'base.html' %}
- 
+
 {% block content %}
-<h2>List of Snacks</h2>
-<ul>
-    {% for snack in object_list %}
-    <ul>
-        <p>
-            {{ snack.name }}
-        </p>
-        <p>
-            {{ snack.purchaser }}
-        </p>
-        <p>
-            {{ snack.description }}
-        </p>
-    </ul>
-    {% endfor%}
-    {% endblock content %}
-</ul>
+<div class="p-4">
+    <h2 class="mb-4 text-2xl font-bold">List of Snacks</h2>
+    <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+        {% for snack in object_list %}
+        <div class="bg-white rounded-lg shadow-md">
+            <div class="p-6">
+                <p class="mb-2 text-xl font-semibold">{{ snack.name }}</p>
+                <p class="mb-4 text-gray-600">{{ snack.purchaser }}</p>
+                <p class="text-gray-700">{{ snack.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock content %}
